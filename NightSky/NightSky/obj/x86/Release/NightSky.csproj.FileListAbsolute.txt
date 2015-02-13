@@ -1,0 +1,85 @@
+C:\Users\nti\Documents\Visual Studio 2010\Projects\NightSky\NightSky\obj\x86\Release\NightSky.csprojResolveAssemblyReference.cache
+C:\Users\nti\Dropbox\NightSky\NightSky\obj\x86\Release\NightSky.csprojResolveAssemblyReference.cache
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Ambient\Rain.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\fade\fade.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\SplashScreen\TwosmomaniaLogo.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\NightSky.exe
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\NightSky.pdb
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\MonoGame.Framework.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.MediaFoundation.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.XAudio2.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct3D11.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.DXGI.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct2D1.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Lidgren.Network.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.XInput.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.RawInput.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct3D9.dll
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.MediaFoundation.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.XAudio2.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct3D11.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.DXGI.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct2D1.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.XInput.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.RawInput.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct3D9.xml
+C:\Users\nti\Dropbox\NightSky\NightSky\obj\x86\Release\NightSky.exe
+C:\Users\nti\Dropbox\NightSky\NightSky\obj\x86\Release\NightSky.pdb
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Tile1.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Ambient\nattbakgrund.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Mobs\SlimeSheet.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Mobs\WormSheet.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\MenuItems\logo.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\MenuItems\Exit.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\MenuItems\Options.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\MenuItems\Start.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\OptionsItems\music.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\OptionsItems\particle density.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Mobs\PlayerAnimSheet.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Ambient\game over.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Ambient\retry.png
+C:\Users\nti\Dropbox\NightSky\NightSky\bin\Windows\Release\Content\Ambient\yes no.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\MenuItems\Exit.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\MenuItems\Options.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\MenuItems\Start.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Mobs\SlimeSheet.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Ambient\nattbakgrund.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Ambient\game over.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Ambient\Rain.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Ambient\retry.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Ambient\yes no.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\fade\fade.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\MenuItems\logo.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Mobs\PlayerAnimSheet.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Mobs\WormSheet.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\OptionsItems\music.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\OptionsItems\particle density.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\SplashScreen\TwosmomaniaLogo.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Content\Tile1.png
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\NightSky.exe
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\NightSky.pdb
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\MonoGame.Framework.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.MediaFoundation.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.XAudio2.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct3D11.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.DXGI.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct2D1.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\Lidgren.Network.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.XInput.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.RawInput.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct3D9.dll
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.MediaFoundation.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.XAudio2.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct3D11.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.DXGI.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct2D1.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.XInput.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.RawInput.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Release\SharpDX.Direct3D9.xml
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\obj\x86\Release\NightSky.csprojResolveAssemblyReference.cache
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\obj\x86\Release\NightSky.exe
+C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\obj\x86\Release\NightSky.pdb

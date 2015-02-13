@@ -1,0 +1,5 @@
+/*!CK:318917177!*//*1420577623,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["0FvaW"]); }
+
+__d("MessagingRecipientSelectedList.react",["Image.react","LeftRight.react","Map","MessagingRecipientTypeaheadItem.react","React","cx","fbt","xuiglyph"],function(a,b,c,d,e,f,g,h,i,j,k,l,m,n){var o=k.createClass({displayName:"MessagingRecipientSelectedList",propTypes:{entries:k.PropTypes.instanceOf(i),onSelect:k.PropTypes.func.isRequired},_renderSelectedEntry:function(p){var q=n({name:'cross',shade:'dark',size:'small'});return (k.createElement(j,{key:p.getUniqueID(),entry:p,imageSize:24,onSelect:this.props.onSelect},k.createElement(g,{className:"_1jm4",src:q})));},render:function(){var p=("Selected"),q=[];this.props.entries.forEach(function(r){return q.push(this._renderSelectedEntry(r));}.bind(this));return (k.createElement("div",{className:"_1jm5"},k.createElement(h,{className:"_1jm6 _2ph-"},k.createElement("span",null,p),k.createElement("span",null,this.props.entries.size)),k.createElement("ul",null,q)));}});e.exports=o;},null);
