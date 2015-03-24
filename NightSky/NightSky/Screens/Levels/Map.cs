@@ -10,6 +10,7 @@ namespace NightSky.Screens.Levels {
     class Map {
         private List<CollisionTiles> collisionTiles = new List<CollisionTiles>();
         
+        //List of collisiontiles
         public List<CollisionTiles> CollisionTiles {
             get { return collisionTiles; }
         }
@@ -27,11 +28,12 @@ namespace NightSky.Screens.Levels {
             
         }
 
+        //Generates map
         public void Generate(int[,] map, int size) {
             for (int x = 0; x < map.GetLength(1); x++) {
                 for (int y = 0; y < map.GetLength(0); y++) {
                     int number = map[y, x];
-
+                    //if the number in array is greater than 0 add it as collisionblock
                     if(number > 0)
                         collisionTiles.Add(new CollisionTiles(number, new Rectangle(x*size,y*size,size,size)));
 
@@ -41,6 +43,7 @@ namespace NightSky.Screens.Levels {
             }
         }
 
+        //draws the map
         public void Draw(SpriteBatch spriteBatch) {
             foreach (CollisionTiles tile in collisionTiles)
                 tile.Draw(spriteBatch);

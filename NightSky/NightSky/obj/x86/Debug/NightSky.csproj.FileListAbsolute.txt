@@ -135,3 +135,5 @@ C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Debug
 C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Debug\SharpDX.RawInput.xml
 C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Debug\Content\MenuItems\siffror.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.exe
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.pdb

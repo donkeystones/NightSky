@@ -8,6 +8,8 @@ using Microsoft.Xna.Framework;
 using NightSky.Screens.Levels;
 using NightSky.Content.Mobs;
 
+//TODO: Create a movingobject/physical object for every mob including player for easier management.
+
 namespace NightSky.Screens {
     public class Level1 : GameScreen{
         private Map map;
@@ -30,6 +32,7 @@ namespace NightSky.Screens {
             previousSpawnTime = TimeSpan.Zero;
             enemySpawnTime = TimeSpan.FromSeconds(5.0f);
 
+            //Mob/texture inits
             slimeText = Content.Load<Texture2D>("Mobs/SlimeSheet");
             background = Content.Load<Texture2D>("Ambient/nattbakgrund");
             wormText = Content.Load<Texture2D>("Mobs/WormSheet");
@@ -37,6 +40,8 @@ namespace NightSky.Screens {
             spawnBlock = new SpawnBlock();
             //slime variables and stuff 
            
+
+            //spawns player
             player = new Player();
             player.Position = new Vector2(7*32,17*32);
             player.Load(Content);
@@ -73,18 +78,26 @@ namespace NightSky.Screens {
         }
 
         public override void Update(GameTime gameTime) {
+            base.Update(gameTime);            
+            //updates time it takes for mobs too spawn
             spawnTime += (float)gameTime.TotalGameTime.Seconds;
+            
+            //updates spawnblock were mobs spawn
             spawnPos = spawnBlock.Position;
             spawnBlock.Update(gameTime);
+            
+            //checks if player is dead
             GameOver();
 
-            base.Update(gameTime);
+            //spawns worm
             if (worms.Count < 1) {
                 if (gameTime.TotalGameTime - previousSpawnTime > enemySpawnTime) {
                     worms.Add(new Worm(wormText, spawnPos));
 
                 }
             }
+
+            //spawns slime
             if (slimes.Count < 2) {
                 if (gameTime.TotalGameTime - previousSpawnTime > enemySpawnTime) {
                     slimes.Add(new Slime(slimeText, true, spawnPos));
@@ -93,19 +106,34 @@ namespace NightSky.Screens {
             }
 
             player.Update(gameTime);
+          
+            //Updates all worms
             foreach (Worm worm in worms)
                 worm.Update(gameTime);
+            
+            //Updates all slimes
             foreach (Slime slime in slimes)
                 slime.Update(gameTime);
+            
+            //Collision update
             foreach (CollisionTiles tile in map.CollisionTiles) {
+            
+                //Updates the collision bools in slimes
                 foreach (Slime slime in slimes)
                     slime.Collision(tile.Rectangle, map.Width, map.Height);
+                
+                //Updates the collision bools in worms
                 foreach (Worm worm in worms)
                     worm.Collision(tile.Rectangle, map.Width, map.Height);
+                
+                //Updates player collision
                 player.Collision(tile.Rectangle, map.Width, map.Height);
             }
             int i = 0;
             foreach (Slime slime in slimes.ToArray()) {
+                
+                    //If player hits top of slime, the slime dies
+                    //TODO: fix the crash if player jumps on two slimes.
                     player.Kill(slime.DestRect, slime);
                     if (slime.IsAlive == false)
                         slimes.RemoveAt(i);
@@ -115,17 +143,27 @@ namespace NightSky.Screens {
 
         public override void Draw(SpriteBatch spriteBatch) {
             base.Draw(spriteBatch);
+            
+            //draws background
             spriteBatch.Draw(background, new Rectangle(0, 0, background.Width, background.Height), Color.White);
+            
+            //draws player
             player.Draw(spriteBatch);
+            
+            //draws worms
             foreach (Worm worm in worms)
                 worm.Draw(spriteBatch);            
+            
+            //Draws slimes
             foreach(Slime slime in slimes)
                 slime.Draw(spriteBatch);
             
+            //draws the map
             map.Draw(spriteBatch);
         }
 
         private void GameOver() {
+            //if player bool IsAlive == false send player to game over screen
             if (player.IsAlive == false) {
                 ScreenManager.Instance.AddScreen(new GameOver());
             }
