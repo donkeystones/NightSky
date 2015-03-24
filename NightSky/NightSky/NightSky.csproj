@@ -38,8 +38,8 @@
     <Compile Include="animations\Animation.cs" />
     <Compile Include="animations\FadeAnimation.cs" />
     <Compile Include="animations\SpriteSheetAnimation.cs" />
-    <Compile Include="Content\Mobs\Slime.cs" />
-    <Compile Include="Content\Mobs\Worm.cs" />
+    <Compile Include="Entitys\Mobs\Slime.cs" />
+    <Compile Include="Entitys\Mobs\Worm.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Screens\GameScreen.cs" />
     <Compile Include="Program.cs" />
@@ -98,13 +98,13 @@
     <Content Include="Content\MenuItems\Start.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Mobs\PlayerAnimSheet.png">
+    <Content Include="Content\Mobsheets\PlayerAnimSheet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Mobs\SlimeSheet.png">
+    <Content Include="Content\Mobsheets\SlimeSheet.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\Mobs\WormSheet.png">
+    <Content Include="Content\Mobsheets\WormSheet.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\OptionsItems\music.png">
@@ -120,6 +120,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Icon.ico" />
+    <None Include="TODO and Fixed\Fixed" />
+    <Content Include="TODO and Fixed\TODO.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

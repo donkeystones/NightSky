@@ -33,9 +33,9 @@ namespace NightSky.Screens {
             enemySpawnTime = TimeSpan.FromSeconds(5.0f);
 
             //Mob/texture inits
-            slimeText = Content.Load<Texture2D>("Mobs/SlimeSheet");
+            slimeText = Content.Load<Texture2D>("Mobsheets/SlimeSheet");
             background = Content.Load<Texture2D>("Ambient/nattbakgrund");
-            wormText = Content.Load<Texture2D>("Mobs/WormSheet");
+            wormText = Content.Load<Texture2D>("Mobsheets/WormSheet");
 
             spawnBlock = new SpawnBlock();
             //slime variables and stuff 
@@ -46,9 +46,12 @@ namespace NightSky.Screens {
             player.Position = new Vector2(7*32,17*32);
             player.Load(Content);
 
+            //creates a new map
             map = new Map();
             Tiles.Content = Content;
             #region Map
+            
+            //generates map
             map.Generate(new int[,]{
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -93,12 +96,11 @@ namespace NightSky.Screens {
             if (worms.Count < 1) {
                 if (gameTime.TotalGameTime - previousSpawnTime > enemySpawnTime) {
                     worms.Add(new Worm(wormText, spawnPos));
-
                 }
             }
 
             //spawns slime
-            if (slimes.Count < 2) {
+            if (slimes.Count < 10) {
                 if (gameTime.TotalGameTime - previousSpawnTime > enemySpawnTime) {
                     slimes.Add(new Slime(slimeText, true, spawnPos));
                     previousSpawnTime = gameTime.TotalGameTime;
@@ -129,16 +131,15 @@ namespace NightSky.Screens {
                 //Updates player collision
                 player.Collision(tile.Rectangle, map.Width, map.Height);
             }
-            int i = 0;
             foreach (Slime slime in slimes.ToArray()) {
-                
                     //If player hits top of slime, the slime dies
-                    //TODO: fix the crash if player jumps on two slimes.
                     player.Kill(slime.DestRect, slime);
                     if (slime.IsAlive == false)
-                        slimes.RemoveAt(i);
-                    i++;
+                        slimes.Remove(slime);
             }
+
+            //If player touches worm
+
         }
 
         public override void Draw(SpriteBatch spriteBatch) {

@@ -137,3 +137,44 @@ C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Debug
 C:\Users\nti\Google Drive\Game Dev\Visual C#\NightSky\NightSky\bin\Windows\Debug\Content\MenuItems\siffror.png
 C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.exe
 C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.pdb
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Ambient\nattbakgrund.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\MenuItems\Exit.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\MenuItems\Options.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\MenuItems\Start.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Ambient\game over.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Ambient\Rain.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Ambient\retry.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Ambient\yes no.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\fade\fade.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\MenuItems\logo.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\MenuItems\siffror.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\OptionsItems\music.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\OptionsItems\particle density.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\SplashScreen\TwosmomaniaLogo.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Tile1.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\NightSky.exe
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\NightSky.pdb
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Lidgren.Network.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.csprojResolveAssemblyReference.cache
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Mobsheets\SlimeSheet.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Mobsheets\PlayerAnimSheet.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Mobsheets\WormSheet.png

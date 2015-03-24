@@ -45,7 +45,7 @@ namespace NightSky.Screens.Levels {
         public Player() { }
 
         public void Load(ContentManager Content) {
-            texture = Content.Load<Texture2D>("Mobs/PlayerAnimSheet");
+            texture = Content.Load<Texture2D>("Mobsheets/PlayerAnimSheet");
             delay = 200f;
             frames = 0;
             dir = 2;
