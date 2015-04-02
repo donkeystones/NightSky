@@ -120,7 +120,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Icon.ico" />
-    <None Include="TODO and Fixed\Fixed" />
+    <Content Include="TODO and Fixed\Fixed.txt" />
     <Content Include="TODO and Fixed\TODO.txt" />
   </ItemGroup>
   <ItemGroup />

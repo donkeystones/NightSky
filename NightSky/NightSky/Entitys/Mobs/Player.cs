@@ -103,7 +103,7 @@ namespace NightSky.Screens.Levels {
 
                 velocity.X = 0f;
             }
-
+            
             if (Keyboard.GetState().IsKeyDown(Keys.Space) && !hasJumped) {
                 position.Y -= 5f;
                 velocity.Y = -9f;

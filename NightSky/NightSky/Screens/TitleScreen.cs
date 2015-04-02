@@ -62,7 +62,7 @@ namespace NightSky {
                     lastChange = gameTime.TotalGameTime.TotalMilliseconds;
                 }
                 if (selected <= -1)
-                    selected = 2;
+                    selected = 1;
             }
             if (keyState.IsKeyDown(Keys.Down)) {
                 if (gameTime.TotalGameTime.TotalMilliseconds > lastChange + delay) {
