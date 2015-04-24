@@ -66,9 +66,11 @@ namespace NightSky {
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime) {
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape)) {
+                this.Exit();
+            }
             ScreenManager.Instance.Update(gameTime);
             // TODO: Add your update logic here
-
             base.Update(gameTime);
         }
 

@@ -29,7 +29,7 @@ namespace NightSky {
         public override void Update(GameTime gameTime) {
             keyState = Keyboard.GetState();
             if (gameTime.TotalGameTime.Seconds >= 3 || keyState.IsKeyDown(Keys.Enter)) {
-                ScreenManager.Instance.AddScreen(new TitleScreen());
+                ScreenManager.Instance.AddScreen(new Level1());
             }
         }
 

@@ -178,3 +178,8 @@ C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.
 C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Mobsheets\SlimeSheet.png
 C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Mobsheets\PlayerAnimSheet.png
 C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Mobsheets\WormSheet.png
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\NightSky.exe.manifest
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\NightSky.application
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.exe.manifest
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.application
+C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Items\Swords\SwordTest.png

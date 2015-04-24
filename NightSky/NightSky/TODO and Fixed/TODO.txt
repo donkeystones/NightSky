@@ -1,6 +1,7 @@
 ﻿TODO List:
 
--Add a better mobspawnsystem and mob kill system.
+-Health
+-Make a weapons system
+-Make it more object orientated for management (Highest priority!)
 -Improve collision so that the player don't get stuck between two tiles
--If player jumps on two mobs at the same time, kill the mobs without crashing the game.
 -Look for more bugs and things to update

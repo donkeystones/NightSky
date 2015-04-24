@@ -2,4 +2,4 @@
 
 24/3-15:
 -Fixed the collision when the player hits slime.
--Fixed the crashing due to player killing to slimes at the same time
+-Fixed the crashing due to player killing two slimes at the same time

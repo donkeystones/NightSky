@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using NightSky.Screens.Levels;
 using NightSky.Content.Mobs;
+using NightSky.Entitys.Items;
 
 //TODO: Create a movingobject/physical object for every mob including player for easier management.
 
@@ -16,31 +17,40 @@ namespace NightSky.Screens {
         private Player player;
         private Texture2D background;
         private Texture2D wormText,slimeText;
-        private SpawnBlock spawnBlock;
-        private Vector2 spawnPos;
+        private Texture2D swordText;
+        private int i = 0;
+        //Sword
+        private Sword sword;
+
+        //Random number for the enemy spawn function
+        private Random rand;
+        private int random;
 
         private float spawnTime;
 
         private TimeSpan enemySpawnTime;
         private TimeSpan previousSpawnTime;
+        
         //Mob lists to keep track of any mob in the game!
         private List<Slime> slimes = new List<Slime>();
         private List<Worm> worms = new List<Worm>();
+
+        //List to keep track of all items on the map
+        private List<Items> Items = new List<Items>();
 
         public override void LoadContent(ContentManager Content) {
             base.LoadContent(Content);
             previousSpawnTime = TimeSpan.Zero;
             enemySpawnTime = TimeSpan.FromSeconds(5.0f);
-
+            rand = new Random();
             //Mob/texture inits
             slimeText = Content.Load<Texture2D>("Mobsheets/SlimeSheet");
             background = Content.Load<Texture2D>("Ambient/nattbakgrund");
             wormText = Content.Load<Texture2D>("Mobsheets/WormSheet");
+            swordText = Content.Load<Texture2D>("Items/Swords/SwordTest");
 
-            spawnBlock = new SpawnBlock();
-            //slime variables and stuff 
-           
 
+            
             //spawns player
             player = new Player();
             player.Position = new Vector2(7*32,17*32);
@@ -65,12 +75,12 @@ namespace NightSky.Screens {
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
-                {0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
+                {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
                 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
             },32);
             #endregion
@@ -81,13 +91,19 @@ namespace NightSky.Screens {
         }
 
         public override void Update(GameTime gameTime) {
+
+            if (i < 1) {
+                sword = new Sword(swordText, new Vector2(10,10));
+                Items.Add(sword);
+                i++;
+            }
+            foreach (Items item in Items) {
+                item.Update();
+            }
+            random = rand.Next(0,800);
             base.Update(gameTime);            
             //updates time it takes for mobs too spawn
             spawnTime += (float)gameTime.TotalGameTime.Seconds;
-            
-            //updates spawnblock were mobs spawn
-            spawnPos = spawnBlock.Position;
-            spawnBlock.Update(gameTime);
             
             //checks if player is dead
             GameOver();
@@ -95,18 +111,18 @@ namespace NightSky.Screens {
             //spawns worm
             if (worms.Count < 1) {
                 if (gameTime.TotalGameTime - previousSpawnTime > enemySpawnTime) {
-                    worms.Add(new Worm(wormText, spawnPos));
+                 // worms.Add(new Worm(wormText, new Vector2(random, 0)));
                 }
             }
 
             //spawns slime
             if (slimes.Count < 10) {
                 if (gameTime.TotalGameTime - previousSpawnTime > enemySpawnTime) {
-                    slimes.Add(new Slime(slimeText, true, spawnPos));
+                    //slimes.Add(new Slime(slimeText, true, new Vector2(random, 0)));
                     previousSpawnTime = gameTime.TotalGameTime;
                 }
             }
-
+            //Updates player
             player.Update(gameTime);
           
             //Updates all worms
@@ -130,6 +146,10 @@ namespace NightSky.Screens {
                 
                 //Updates player collision
                 player.Collision(tile.Rectangle, map.Width, map.Height);
+
+                foreach (Items item in Items) 
+                    item.Collision(tile.Rectangle, map.Width, map.Height);
+                
             }
             foreach (Slime slime in slimes.ToArray()) {
                     //If player hits top of slime, the slime dies
@@ -161,6 +181,9 @@ namespace NightSky.Screens {
             
             //draws the map
             map.Draw(spriteBatch);
+            foreach (Items item in Items) { 
+                item.Draw(spriteBatch);
+            }
         }
 
         private void GameOver() {

@@ -78,8 +78,8 @@ namespace NightSky.Content.Mobs {
             }
 
             if (destRect.TouchLeftOf(newRectangle)) {
-                hitRight = false;
                 hitLeft = true;
+                hitRight = false;
             }
             if (destRect.TouchRightOf(newRectangle)) {
                 hitRight = true;
