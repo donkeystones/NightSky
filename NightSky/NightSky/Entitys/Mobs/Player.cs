@@ -130,6 +130,8 @@ namespace NightSky.Screens.Levels {
 
         }
 
+
+
         public void Collision(Rectangle newRectangle, int xOffset, int yOffset) {
             if (destRect.TouchTopOf(newRectangle)) {
                 destRect.Y = newRectangle.Y - destRect.Height;

@@ -12,7 +12,8 @@ namespace NightSky.Entitys.Items {
         private Vector2 position;
 
 
-        public Items(Texture texture,Vector2 position) {
+
+        public Items(Texture texture, Vector2 position) {
             this.position = position;
         }
 

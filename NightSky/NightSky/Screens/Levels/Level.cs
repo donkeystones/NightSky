@@ -8,6 +8,7 @@ using Microsoft.Xna.Framework;
 using NightSky.Screens.Levels;
 using NightSky.Content.Mobs;
 using NightSky.Entitys.Items;
+using Microsoft.Xna.Framework.Input;
 
 //TODO: Create a movingobject/physical object for every mob including player for easier management.
 
@@ -18,7 +19,9 @@ namespace NightSky.Screens {
         private Texture2D background;
         private Texture2D wormText,slimeText;
         private Texture2D swordText;
-        private int i = 0;
+        private Texture2D explosionText;
+
+        private Explosion explosion;
         //Sword
         private Sword sword;
 
@@ -34,6 +37,7 @@ namespace NightSky.Screens {
         //Mob lists to keep track of any mob in the game!
         private List<Slime> slimes = new List<Slime>();
         private List<Worm> worms = new List<Worm>();
+        private List<Explosion> explosions = new List<Explosion>();
 
         //List to keep track of all items on the map
         private List<Items> Items = new List<Items>();
@@ -48,8 +52,8 @@ namespace NightSky.Screens {
             background = Content.Load<Texture2D>("Ambient/nattbakgrund");
             wormText = Content.Load<Texture2D>("Mobsheets/WormSheet");
             swordText = Content.Load<Texture2D>("Items/Swords/SwordTest");
-
-
+            explosionText = Content.Load<Texture2D>("Ambient/ExplosionSpriteSheet");
+            
             
             //spawns player
             player = new Player();
@@ -92,15 +96,28 @@ namespace NightSky.Screens {
 
         public override void Update(GameTime gameTime) {
 
-            if (i < 1) {
-                sword = new Sword(swordText, new Vector2(10,10));
-                Items.Add(sword);
-                i++;
-            }
+            
             foreach (Items item in Items) {
                 item.Update();
             }
+
+            foreach (Explosion ex in explosions) {
+                ex.Update(gameTime);
+            }
             random = rand.Next(0,800);
+            //MAKE IT RAIN!
+            if (Keyboard.GetState().IsKeyDown(Keys.Enter)) {
+                //Creates a sword with InventoryType = weapon
+                sword = new Sword(swordText, new Vector2(random, 10));
+                Items.Add(sword);
+                explosion = new Explosion(explosionText, new Vector2(random, 10));
+                explosions.Add(explosion);
+                                
+                //Creates a limit so there can not be more than 100 swords
+                if (Items.Count() > 100) {
+                    Items.Remove(sword);
+                }
+            }
             base.Update(gameTime);            
             //updates time it takes for mobs too spawn
             spawnTime += (float)gameTime.TotalGameTime.Seconds;
@@ -184,6 +201,11 @@ namespace NightSky.Screens {
             foreach (Items item in Items) { 
                 item.Draw(spriteBatch);
             }
+
+            foreach (Explosion ex in explosions) {
+                ex.Draw(spriteBatch);
+            }
+
         }
 
         private void GameOver() {

@@ -53,6 +53,7 @@ namespace NightSky.Entitys.Items {
     
 
         public override void Draw(SpriteBatch spriteBatch) {
+            
             spriteBatch.Draw(texture, new Rectangle((int)position.X, (int)position.Y, texture.Width, texture.Height),Color.White);
         }
     }

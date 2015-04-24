@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="NightSky.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
-  <description asmv2:iconFile="Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <description asmv2:iconFile="favicon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="NightSky" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NightSky.exe" size="59904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="NightSky.exe" size="33280">
       <assemblyIdentity name="NightSky" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>QqTtptd1mcOir6X+KdUDTm1J+JQ=</dsig:DigestValue>
+        <dsig:DigestValue>IaR5gLPZYNclThcDl2lmB2foHQs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -186,6 +186,15 @@
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="Content\Ambient\ExplosionSpriteSheet.png" size="4432">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>UFnfYkj77YUXprs0ytoI7dpzoiE=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Content\Ambient\game over.png" size="41340">
     <hash>
       <dsig:Transforms>
@@ -357,31 +366,40 @@
       <dsig:DigestValue>qOQoD9XyEQpeT/QlFfjAINeY4GI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Icon.ico" size="32038">
+  <file name="favicon.ico" size="4286">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>rNQzYMzFVpdrGbhxKrn/qWwoIUk=</dsig:DigestValue>
+      <dsig:DigestValue>5+JXWsN/pgd/NcGXfjiySfg6qIQ=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TODO and Fixed\Fixed.txt" size="141">
+  <file name="TODO and Fixed\Added.txt" size="57">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>tOQLarNFW5zF8TYq0NAr78pFh5M=</dsig:DigestValue>
+      <dsig:DigestValue>Yn4Oq6E6M+x7LmwJT5PDX948mXE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TODO and Fixed\TODO.txt" size="269">
+  <file name="TODO and Fixed\Fixed.txt" size="142">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>qG6Or+T3bYCGk2E2Crsk5gK8Eu4=</dsig:DigestValue>
+      <dsig:DigestValue>LGY91pYMBgqECeFlMVXjNAYd9bw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TODO and Fixed\TODO.txt" size="231">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7LYLtyRAFcqijBAnWJHl6ZPNV8Q=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

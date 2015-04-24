@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>86C69CB4EFA157A76AB74B73850CF3A0D4FBB1B4</ManifestCertificateThumbprint>
@@ -66,6 +66,7 @@
     <Compile Include="animations\Animation.cs" />
     <Compile Include="animations\FadeAnimation.cs" />
     <Compile Include="animations\SpriteSheetAnimation.cs" />
+    <Compile Include="Entitys\Items\Explosion.cs" />
     <Compile Include="Entitys\Items\Inventory.cs" />
     <Compile Include="Entitys\Items\Items.cs" />
     <Compile Include="Entitys\Items\Sword.cs" />
@@ -96,6 +97,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Ambient\ExplosionSpriteSheet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Ambient\game over.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -153,7 +157,8 @@
     <Content Include="Content\Tile1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Icon.ico" />
+    <Content Include="favicon.ico" />
+    <Content Include="TODO and Fixed\Added.txt" />
     <Content Include="TODO and Fixed\Fixed.txt" />
     <Content Include="TODO and Fixed\TODO.txt" />
   </ItemGroup>
