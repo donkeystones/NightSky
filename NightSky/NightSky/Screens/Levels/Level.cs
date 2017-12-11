@@ -128,14 +128,14 @@ namespace NightSky.Screens {
             //spawns worm
             if (worms.Count < 1) {
                 if (gameTime.TotalGameTime - previousSpawnTime > enemySpawnTime) {
-                 // worms.Add(new Worm(wormText, new Vector2(random, 0)));
+                 worms.Add(new Worm(wormText, new Vector2(random, 10)));
                 }
             }
 
             //spawns slime
             if (slimes.Count < 10) {
                 if (gameTime.TotalGameTime - previousSpawnTime > enemySpawnTime) {
-                    //slimes.Add(new Slime(slimeText, true, new Vector2(random, 0)));
+                    slimes.Add(new Slime(slimeText, true, new Vector2(random, 10)));
                     previousSpawnTime = gameTime.TotalGameTime;
                 }
             }

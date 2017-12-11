@@ -184,3 +184,7 @@ C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.
 C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.application
 C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Items\Swords\SwordTest.png
 C:\Users\nti\Documents\GitHub\NightSky\NightSky\NightSky\bin\Windows\Debug\Content\Ambient\ExplosionSpriteSheet.png
+C:\Users\oscar\Documents\github\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.csprojResolveAssemblyReference.cache
+C:\Users\oscar\Documents\github\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.csproj.CoreCompileInputs.cache
+C:\Users\oscar\Documents\github\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.exe
+C:\Users\oscar\Documents\github\NightSky\NightSky\NightSky\obj\x86\Debug\NightSky.pdb
